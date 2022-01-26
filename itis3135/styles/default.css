@@ -7,13 +7,14 @@ body {
     margin-right: 150px;
 }
 
-img {
+figure {
     align-items: center;
 }
 
 figcaption {
     text-align: center;
 }
+
 header, footer {
     margin-top: 40px;
     text-align: center;
