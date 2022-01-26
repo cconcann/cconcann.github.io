@@ -1,5 +1,5 @@
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #ED254E;
     background-color: #4056F4;
 
@@ -7,6 +7,9 @@ body {
     margin-right: 150px;
 }
 
+figcaption {
+    text-align: center;
+}
 header, footer {
     margin-top: 40px;
     text-align: center;
