@@ -7,8 +7,9 @@ body {
     margin-right: 150px;
 }
 
-figure {
-    align-items: center;
+.centerImage {
+    text-align: center;
+    display: block;
 }
 
 figcaption {
