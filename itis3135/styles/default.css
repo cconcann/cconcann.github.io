@@ -1,4 +1,5 @@
-body {
+body 
+{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #ED254E;
     background-color: #9DF7E5;
@@ -7,16 +8,19 @@ body {
     margin-right: 150px;
 }
 
-.centerImage {
+.centerImage 
+{
     text-align: center;
     display: block;
 }
 
-figcaption {
+figcaption 
+{
     text-align: center;
 }
 
-header, footer {
+header, footer 
+{
     margin-top: 40px;
     text-align: center;
     margin-bottom: 40px;
@@ -24,13 +28,18 @@ header, footer {
     background-color: #9DF7E5;
 }
 
-h1, h2, h3 {
+h1, h2, h3 
+{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     line-height: 0px;
 }
 
-main {
+main 
+{
     margin-left: 120px;
     margin-right: 120px;
 }
+
+a {text-decoration: none; }
+a:hover {color: rgb(31, 104, 163);}
