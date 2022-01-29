@@ -58,3 +58,24 @@ th, td
 {
     border: 1px solid rgb(255, 4, 4);
 }
+
+.bold
+{
+    font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	font-size: x-large;
+}
+
+.bluetable{
+	background-color: #9DF7E5;
+	font-weight: bolder;
+	vertical-align: top;
+
+}
+
+.buttonformat{
+	background-color: #570a0a;
+	color: rgb(244, 248, 0);
+
+}
