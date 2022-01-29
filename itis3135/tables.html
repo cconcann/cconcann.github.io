@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+    <head>
+        <meta charset = "utf-8">
+        <title>
+            Christopher Concannon 💪 ITIS3135 💪 Chrystal Crocodiles Tables
+        </title>
+        <link type = "text/css" href = "styles/default.css" rel = "stylesheet">
+    </head>
+    <body>
+        <header>        
+            <h1> Christopher Concannon 💪 ITIS3135 💪 Chrystal Crocodiles </h1>
+            <nav>
+                <a href = "index.html">Home</a>
+                💪
+                <a href = "introduction.html">Introduction</a>
+                💪
+                <a href = "contract.html">Contract</a>
+                💪
+                <a href = "tables.html">Tables</a>        
+            </nav>
+        </header>
+        <main>
+            <h2>
+               Activity 2- HTML Tables
+            </h2>
+                <h3>My Tabular Data</h3>
+                    <ol>
+                        <li>James Bond 007@ccllc.com 30</li>
+                        <li>Rex Fett rex@ccllc.com 8</li>
+                        <li>Fives Fett fives@ccllc.com 5</li>
+                        <li>Jango Fett Jango@ccllc.com 12</li>
+                        <li>Boba Fett boba@ccllc.com 4</li>
+                        <li>Anakin Skywalker vader@ccllc.com 16</li>
+                        <li>Obiwon Kenobi obi@ccllc.com 3</li>
+                    </ol>
+    
+                <h3>Employee Data in Simple Table</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>E-mail</th>
+                                <th class = "right">Years of Service</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>James Bond</td>
+                                <td>007@ccllc.com</td>
+                                <td class = "right">30</td>
+                            </tr>
+                            <tr>
+                                <td>Rex Fett</td>
+                                <td>rex@ccllc.com</td>
+                                <td class = "right">8</td>
+                            </tr>
+                            <tr>
+                                <td>Fives Fett</td>
+                                <td>fives@ccllc.com</td>
+                                <td class = "right">5</td>
+                            </tr>
+                            <tr>
+                                <td>Jango Fett</td>
+                                <td>Jango@ccllc.com</td>
+                                <td class = "right">12</td>
+                            </tr>
+                            <tr>
+                                <td>Boba Fett</td>
+                                <td>boba@ccllc.com</td>
+                                <td class = "right">4</td>
+                            </tr>
+                            <tr>
+                                <td>Anakin Skywalker</td>
+                                <td>vader@ccllc.com</td>
+                                <td class = "right">16</td>
+                            </tr>
+                            <tr>
+                                <td>Obiwon Kenobi</td>
+                                <td>obi@ccllc.com</td>
+                                <td class = "right">3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                <h3>Employee Data in Complex Table</h3>
+                    <figure>
+                        <figcaption>Employee Information For the Company</figcaption>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th id = "department">Department</th>
+                                    <th id = "name">Name</th>
+                                    <th id = "email">E-mail</th>
+                                    <th id = "years" class = "right">Years of Service</th>
+                                    <th id = "salary">Monthly Salary</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td headers = "department" rowspan = "1" class = "brown">CFO</td>
+                                    <td headers = "name">James Bond</td>
+                                    <td headers = "email">007@ccllc.com</td>
+                                    <td headers = "years" class = "right">30</td>
+                                    <td headers = "salary">$90,000</td>
+                                </tr>
+                                <tr>
+                                    <td headers = "department" rowspan = "4" class = "brown">Consultants</td>
+                                    <td headers = "name">Rex Fett</td>
+                                    <td headers = "email">rex@ccllc.com</td>
+                                    <td headers = "years" class = "right">8</td>
+                                    <td headers = "salary">$45,000</td>
+                                </tr>
+                                <tr>
+                                    <td headers = "name">Fives Fett</td>
+                                    <td headers = "email">fives@ccllc.com</td>
+                                    <td headers = "years" class = "right">5</td>
+                                    <td headers = "salary">$55,555</td>
+                                </tr>
+                                <tr>
+                                    
+                                    <td headers = "name">Jango Fett</td>
+                                    <td headers = "email">jango@ccllc.com</td>
+                                    <td headers = "years" class = "right">12</td>
+                                    <td headers = "salary">$62,000</td>
+                                </tr>
+                                <tr>
+                                    <td headers = "name">Boba Fett</td>
+                                    <td headers = "email">boba@ccllc.com</td>
+                                    <td headers = "years" class = "right">4</td>
+                                    <td headers = "salary">$36,000</td>
+                                </tr>
+                                <tr>
+                                    <td headers = "department" rowspan = "2" class = "brown">Sales</td>
+                                    <td headers = "name">Anakin Skywalker</td>
+                                    <td headers = "email">vader@ccllc.com</td>
+                                    <td headers = "years" class = "right">16</td>
+                                    <td headers = "salary">$66,000</td>
+                                </tr>
+                                <tr>
+                                    <td headers="name">Obiwon Kenobi</td>
+                                    <td headers="email">Obiwon@ccllc.com</td>
+                                    <td headers="years" class = "right">3</td>
+                                    <td headers="salary">$67,000</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="3" class="right">Total Years of Service</td>
+                                    <td headers="years" class = "right">78</td>
+                                    <td headers="salary" class = "right">$421,555</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </figure>
+
+
+            
+        </main>         
+        <footer>
+            <br/>
+            <nav>
+                <a href="https://webpages.charlotte.edu/cconcann/" target="_blank">Charlotte.edu</a>
+                <a href="https://github.com/cconcann/cconcann.github.io" target="_blank">Github</a>
+                <a href="https://cconcann.github.io/" target="_blank">Github.io</a>
+                <a href="https://github.com/cconcann/cconcann.github.io" target="_blank">ITIS 3135 Github Pages</a>
+                <a href="https://www.codecademy.com/profiles/net5854060157" target="_blank">Codecademy</a>
+                <a href="https://www.freecodecamp.org/fcc24c91f20-61ae-4acf-803c-2209febb926b" target="_blank">freeCodeCamp</a>
+                <a href="http://jsfiddle.net/user/cconcann/fiddles/" target="_blank">JSFiddle</a>
+                <a href="https://www.linkedin.com/in/christopher-concannon-1b840122b/" target="_blank">LinkedIn</a>
+            </nav>
+            <br />
+	        Created by Concannon Consulting LLC &copy;2022.
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+	            <img src = "images/button_validation_css.png" />
+            </a>
+                
+            <a href="http://validator.w3.org/check?uri=referer">
+                <img src = "images/button_validation_html5.png" />
+            </a>
+
+    </body>
+
+</html>
