@@ -16,5 +16,5 @@ function greeting()
 {
     let userName = document.getElementById('firstname').value;
     let userFeeling = document.getElementById('feeling').value;
-    document.getElementById("output").innerHTML = "Welcome, " + userName + "!  Thankyou for telling us you are feeling " + userFeeling + ".";
+    document.getElementById("greeting").innerHTML = "Welcome, " + userName + "!  Thankyou for telling us you are feeling " + userFeeling + ".";
 }
