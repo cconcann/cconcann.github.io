@@ -39,3 +39,9 @@ function showPic()
     var Image_Id = document.getElementById('babyPic');
         Image_Id.src = "images/baby.jpg";
 }
+
+function swapPic()
+{
+    var Image_Id = document.getElementById('babyPic');
+        Image_Id.src = "images/dog.jpg";
+}
