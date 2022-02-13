@@ -48,5 +48,5 @@ function swapPic()
 
 function swapName()
 {
-    document.getElementById('name').innerHTML = "Christopher Concannon 💪 ITIS3135 💪 The Crimson Canianiacs!!!!";
+    document.getElementById('name').innerHTML = "Christopher Concannon 💪 ITIS3135 💪 The Crimson Caniacs!!!!";
 }
