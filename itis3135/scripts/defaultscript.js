@@ -18,3 +18,11 @@ function greeting()
     let userFeeling = document.getElementById('feeling').value;
     document.getElementById("greeting").innerHTML = "Welcome, " + userName + "!  Thankyou for telling us you are feeling " + userFeeling + ".";
 }
+
+
+function calculateTax()
+{
+    let sales = parseInt(document.getElementById('sales').value);
+    const finalValue = sales + (sales * 0.13);
+    document.getElementById('salesOutput').innerHTML = "Your total after tax is: $" + finalValue + ".";
+}
