@@ -9,7 +9,7 @@ function testFunction()
     alert("this is a test");
 }
 
-function displayDatetime() 
+function displayDateTime() 
 {
     let today = new Date();
     let month = today.getMonth();
