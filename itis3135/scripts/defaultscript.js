@@ -33,3 +33,9 @@ function calculateShipping()
     const finalShipping = shipping + (shipping * 0.10);
     document.getElementById('shippingOutput').innerHTML = "Your total for shipping is: $" + finalShipping + ".";
 }
+
+function showPic()
+{
+    var Image_Id = document.getElementById('babyPic');
+        Image_Id.src = "images/baby.jpg";
+}
