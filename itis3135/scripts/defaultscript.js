@@ -45,3 +45,8 @@ function swapPic()
     var Image_Id = document.getElementById('babyPic');
         Image_Id.src = "images/dog.jpg";
 }
+
+function swapName()
+{
+    document.getElementById('name').innerHTML = "Christopher Concannon 💪 ITIS3135 💪 The Crimson Canianiacs!!!!";
+}

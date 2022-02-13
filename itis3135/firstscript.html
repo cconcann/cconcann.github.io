@@ -10,7 +10,7 @@
     </head>
     <body onload="displayDateTime();">
         <header>        
-            <h1> Christopher Concannon 💪 ITIS3135 💪 Chrystal Crocodiles </h1>
+            <h1 id="name"> Christopher Concannon 💪 ITIS3135 💪 Chrystal Crocodiles </h1>
             <nav>
                 <a href="index.html">Home</a>
                 💪
@@ -56,6 +56,7 @@
                 <br>
                 <input type="button" onclick="calculateTax();" name ="submit" id="sales" value="Calculate" />
             </p>
+
             <h3 id="salesOutput"></h3>
 
             <h3>Calculate Shipping Cost</h3>
@@ -64,12 +65,16 @@
                 <br>
                 <input type="button" onclick="calculateShipping();" name ="submit" id="shipping" value="Calculate" />
             </p>
+
             <h3 id="shippingOutput"></h3>
 
             <h3 onclick="showPic()">click to see our favorite customer</h4>
                 <img src="NULL" id="babyPic" style="width: 200px; height: 250px;">
 
             <h3 onclick="swapPic()">Click to see a different customer!</h3>
+
+            <h3 onclick="swapName()">Click to see our companies secret name!</h3>
+
 
         </main>         
         <footer>
