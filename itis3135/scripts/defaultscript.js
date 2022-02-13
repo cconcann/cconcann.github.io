@@ -26,3 +26,10 @@ function calculateTax()
     const finalValue = sales + (sales * 0.13);
     document.getElementById('salesOutput').innerHTML = "Your total after tax is: $" + finalValue + ".";
 }
+
+function calculateShipping()
+{
+    let shipping = parseInt(document.getElementById('shipping').value);
+    const finalShipping = shipping + (shipping * 0.10);
+    document.getElementById('shippingOutput').innerHTML = "Your total for shipping is: $" + finalShipping + ".";
+}

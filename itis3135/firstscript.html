@@ -38,7 +38,7 @@
 
             <h4 onclick="testFunction()">click to test</h4>
 
-            <p>test date 13</p>
+            <p>test date 15</p>
 
             <p>
                 Enter first name: <input type="text" placeholder="First Name" id="firstname" name="firstname">
@@ -56,7 +56,15 @@
                 <br>
                 <input type="button" onclick="calculateTax();" name ="submit" id="salesOutput" value="Calculate" />
             </p>
-            <h3 id="output2"></h3>
+            <h3 id="salesOutput"></h3>
+
+            <h3>Calculate Shipping Cost</h3>
+            <p>
+                Enter the miles to be shipped: <input type="text" placeholder="Shipping" id="shipping" name="shipping" />
+                <br>
+                <input type="button" onclick="calculateShipping();" name ="submit" id="shippingOutput" value="Calculate" />
+            </p>
+            <h3 id="shippingOutput"></h3>
         </main>         
         <footer>
             <br/>
