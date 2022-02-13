@@ -12,5 +12,5 @@ document.getElementById("displayDateTime").innerHTML = dateTime + ' <br> Day :- 
 
 function testFunction()
 {
-    alert("this is a test")
+    alert("this is a test");
 }
