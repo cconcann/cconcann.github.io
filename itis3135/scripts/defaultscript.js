@@ -53,11 +53,13 @@ function swapName()
 
 function validateEntry(_sideCount)
 {
-    while(isNaN(_sideCount))
+    while(isNaN(_sideCount) || _sideCount < 1 || _sideCount > 10)
     {
-        alert("Apologies but your input is out of bounds");
+        alert("Apologies but your input is not valid");
         _sideCount = prompt("Please input a number between 1 and 10 for sides");
     }
+    return _sideCount
+}
    
 
 function getPolygonSides()
@@ -66,7 +68,7 @@ function getPolygonSides()
     var validSides = validateEntry(sidecount);
     var polygonResults = getShape(validSides);
     alert(polygonResults);
-    document.getElementById('_polygonResults').innerHTML = "Your polygon is a" + polygonResults + ".";
+    document.getElementById('_polygonResults').innerHTML = "Your polygon is a/an " + polygonResults + ".";
 
 }
 
@@ -74,9 +76,4 @@ function getShape(_sideCount)
 {
     var listOfPolygons = new Array("nothing real","digon", "triangle","square", "pentagon", "hexagon", "heptagon","octagon","nonagon","decagon");
     return listOfPolygons[_sideCount -1];
-}
-
-
-
- return _sideCount;
 }
