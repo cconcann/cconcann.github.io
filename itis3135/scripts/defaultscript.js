@@ -51,6 +51,15 @@ function swapName()
     document.getElementById('name').innerHTML = "Christopher Concannon 💪 ITIS3135 💪 The Crimson Caniacs!!!!";
 }
 
+function validateEntry(_sideCount)
+{
+    while(isNaN(_sideCount))
+    {
+        alert("Apologies but your input is out of bounds");
+        _sideCount = prompt("Please input a number between 1 and 10 for sides");
+    }
+   
+
 function getPolygonSides()
 {
     var sidecount = parseInt(prompt("The Crystal Crocodile would like you to input a number between 1 and 10, and will tell you what polygon has that number of sides!"));
@@ -69,12 +78,5 @@ function getShape(_sideCount)
 
 
 
-function validateEntry(_sideCount)
-{
-    while(isNaN(_sideCount))
-    {
-        alert("Apologies but your input is out of bounds");
-        _sideCount = prompt("Please input a number between 1 and 10 for sides");
-    }
-    return _sideCount;
+ return _sideCount;
 }
