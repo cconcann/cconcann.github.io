@@ -50,3 +50,31 @@ function swapName()
 {
     document.getElementById('name').innerHTML = "Christopher Concannon 💪 ITIS3135 💪 The Crimson Caniacs!!!!";
 }
+
+function getPolygonSides()
+{
+    var sidecount = parseInt(prompt("The Crystal Crocodile would like you to input a number between 1 and 10, and will tell you what polygon has that number of sides!"));
+    var validSides = validateEntry(sidecount);
+    var polygonResults = getShape(validSides);
+    alert(polygonResults);
+    document.getElementById('_polygonResults').innerHTML = "Your polygon is a" + polygonResults + ".";
+
+}
+
+function getShape(_sideCount)
+{
+    var listOfPolygons = new Array("nothing real","digon", "triangle","square", "pentagon", "hexagon", "heptagon","octagon","nonagon","decagon");
+    return listOfPolygons[_sideCount -1];
+}
+
+
+
+function validateEntry(_sideCount)
+{
+    while(isNaN(_sideCount))
+    {
+        alert("Apologies but your input is out of bounds");
+        _sideCount = prompt("Please input a number between 1 and 10 for sides");
+    }
+    return _sideCount;
+}
