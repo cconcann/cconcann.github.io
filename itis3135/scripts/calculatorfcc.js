@@ -23,15 +23,15 @@ window.onload=function () {
     }
 
     const calculator = document.querySelector('.calculator');
-    const keys = calculator.querySelector('.calculator_keys');
     const display = calculator.querySelector('.calculator_display');
+    const keys = calculator.querySelector('.calculator_keys');
 
 
-    keys.addEventListener('click', clicked => 
+    keys.addEventListener('click', e => 
     {
-        if (clicked.target.matches('button')) 
+        if (e.target.matches('button')) 
         {
-            const key = clicked.target;
+            const key = e.target;
             const action = key.dataset.action;
             const keyContent = key.textContent;
             const displayedNum = display.textContent;
