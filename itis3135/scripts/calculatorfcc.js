@@ -26,9 +26,7 @@ window.onload=function () {
     const display = calculator.querySelector('.calculator_display');
     const keys = calculator.querySelector('.calculator_keys');
 
-
-    keys.addEventListener('click', e => 
-    {
+    keys.addEventListener('click', e => {
         if (e.target.matches('button')) 
         {
             const key = e.target;
@@ -55,20 +53,31 @@ window.onload=function () {
                 calculator.dataset.previousKeyType = 'number';
             }
 
+            if (action === 'decimal') 
+            {
+                if (!displayedNum.includes('.')) 
+                {
+                    display.textContent = displayedNum + '.';
+                } 
+                else if (previousKeyType === 'operator' ||
+                    previousKeyType === 'calculate') 
+                {
+                    display.textContent = '0.';
+                }
 
-            if (action === 'add' || 
-                action === 'subtract' ||
-                action === 'multiply' || 
-                action === 'divide') 
+                calculator.dataset.previousKeyType = 'decimal';
+            }
+
+            if (action === 'add' || action === 'subtract' ||
+                action === 'multiply' || action === 'divide') 
             {
                 const firstValue = calculator.dataset.firstValue;
                 const operator = calculator.dataset.operator;
                 const secondValue = displayedNum;
-                
 
-
-                if (firstValue && operator && previousKeyType !== 'operator' && previousKeyType !== 'calculate') 
-                {
+                if (firstValue && operator &&
+                    previousKeyType !== 'operator' && previousKeyType !== 'calculate') 
+                    {
                     const calcValue = calculate(firstValue, operator, secondValue);
                     display.textContent = calcValue;
                     calculator.dataset.firstValue = calcValue;
@@ -81,22 +90,6 @@ window.onload=function () {
                 key.classList.add('is-depressed');
                 calculator.dataset.previousKeyType = 'operator';
                 calculator.dataset.operator = action;
-
-            }
-
-            if (action === 'decimal') 
-            {
-                if (!displayedNum.includes('.')) 
-                {
-                    display.textContent = displayedNum + '.';
-                } 
-                else if (previousKeyType === 'operator' ||
-                         previousKeyType === 'calculate') 
-                {
-                    display.textContent = '0.';
-                }
-
-                calculator.dataset.previousKeyType = 'decimal';
             }
 
             if (action === 'clear') 
