@@ -79,3 +79,11 @@ th, td
 	color: rgb(244, 248, 0);
 
 }
+
+.buttoncalculatortry
+{
+    background-color: red;
+    border-radius: 12px;
+    font-size: 16px;
+    color: #9DF7E5;
+}
