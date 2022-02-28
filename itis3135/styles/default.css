@@ -111,14 +111,14 @@ th, td
   }
   
   .calculator_keys {
-    background-color: #999;
+    background-color: #9DF7E5;
     display: grid;
     grid-gap: 1px;
     grid-template-columns: repeat(4, 1fr);
   }
   
   .calculator_keys > * {
-    background-color: #fff;
+    background-color: #9DF7E5;
     padding: 0.5em 1.25em;
     position: relative;
     text-align: center;
@@ -139,7 +139,7 @@ th, td
   }
   
   .key-operator {
-    background-color: #eee;
+    background-color: #9DF7E5;
   }
   
   .key-equal {
