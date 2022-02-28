@@ -13,7 +13,7 @@ window.onload = function () {
 
         return result
     }
-    
+
     const calculator = document.querySelector('.calculator');
     const display = calculator.querySelector('.calculator_display');
     const keys = calculator.querySelector('.calculator_keys');
