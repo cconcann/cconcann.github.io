@@ -1,25 +1,17 @@
-window.onload=function () {
-    const calculate=(number1, operator, number2) => 
-    {
-        let calculatedvalue = '';
-        if (operator === 'add') 
-        {
-            calculatedvalue = parseFloat(number1) + parseFloat(number2);
-        } 
-        else if (operator === 'subtract') 
-        {
-            calculatedvalue = parseFloat(number1) - parseFloat(number2);
-        } 
-        else if (operator === 'multiply') 
-        {
-            calculatedvalue = parseFloat(number1) * parseFloat(number2);
-        } 
-        else if (operator === 'divide') 
-        {
-            calculatedvalue = parseFloat(number1) / parseFloat(number2);
+window.onload = function () {
+    const calculate = (n1, operator, n2) => {
+        let result = '';
+        if (operator === 'add') {
+            result = parseFloat(n1) + parseFloat(n2);
+        } else if (operator === 'subtract') {
+            result = parseFloat(n1) - parseFloat(n2);
+        } else if (operator === 'multiply') {
+            result = parseFloat(n1) * parseFloat(n2);
+        } else if (operator === 'divide') {
+            result = parseFloat(n1) / parseFloat(n2);
         }
 
-        return calculatedvalue
+        return result
     }
 
     const calculator = document.querySelector('.calculator');
