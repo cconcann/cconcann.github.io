@@ -3,13 +3,14 @@
     <head>
         <meta charset = "utf-8">
         <title>
-            Christopher Concannon 💪 ITIS3135 💪 Chrystal Crocodiles 💪 Website Evaluations
+            Christopher Concannon 💪 ITIS3135 💪 Chrystal Crocodiles 💪 Polygon
         </title>
         <link type = "text/css" href = "styles/default.css" rel = "stylesheet">
+        <script src="scripts/calculator.js" type="text/javascript"></script>
     </head>
-    <body>
+    <body onload="getPolygonSides();">
         <header>        
-            <h1> Christopher Concannon 💪 ITIS3135 💪 Chrystal Crocodiles </h1>
+            <h1 id="name"> Christopher Concannon 💪 ITIS3135 💪 Chrystal Crocodiles </h1>
             <nav>
                 <a href="index.html">Home</a>
                 💪
@@ -21,7 +22,7 @@
                 💪
                 <a href = "forms.html">Forms</a>
                 💪
-                <a href = "brand.html">Brand</a> 
+                <a href = "brand.html">Brand</a>    
                 💪
                 <a href = "website_evaluations.html">Website Evaluations</a>  
                 💪
@@ -29,29 +30,24 @@
                 💪
                 <a href = "polygon.html">Polygon</a>  
                 💪
-                <a href = "calculator_try.html">Calculator Try</a>      
+                <a href = "calculator_try.html">Calculator Try</a>  
             </nav>
         </header>
         <main>
             <h2>
-               Website Evaluations!
+               Calculator Try!
             </h2>
-
-            <h3><a href="https://www.amazon.com/" target="blank">Amazon</a></h3>
-                <ul>
-                    <li>Contrast: The contrast on this page is very good, excellent choice of colors to ensure what needs to pop does.</li>
-                    <li>Repetition: All the objects and layout is repeated throughout the page. This ensured consistency.</li>
-                    <li>Alignment: Everything is aligned with similar objects of the same type. Remains a visually appealing.</li>
-                    <li>Proximity: Everything kept a good amount of proximity along with enough distance to make everything look good.</li>
-                </ul>
             
-            <h3><a href="https://www.art.yale.edu/" target="blank">Yale School of Art</a></h3>
-                <ul>
-                    <li>Contrast: Every color on this page is  horrible. It visually hurts the eyes and clashes.</li>
-                    <li>Repetition: Nothing on this page is repeated. Everything is different and lacks any consistency.</li>
-                    <li>Alignment: There is literally no alignment on this page.</li>
-                    <li>Proximity: Everything is either right on top of eachother, or too far away to look any good.</li>
-                </ul>
+            <p>
+                Enter your first number: <input type="text" placeholder="First Number" id="firstnumber" name="firstnummber">
+                <br>
+                Enter your second number: <input type="text" placeholder="Second Number" id="secondnumber" name="secondnumber" />
+                <br>
+                <input type="button" onclick="additionFunction();" name="addition" id="addition" value="Submit" />
+            </p>
+
+
+
         </main>         
         <footer>
             <br/>
