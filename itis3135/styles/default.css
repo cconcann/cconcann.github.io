@@ -51,7 +51,7 @@ thead , tfoot
 
 tbody tr:nth-child(odd)
 {
-    background-color: #0004f0;
+    background-color: #4244d8;
 }
 
 th, td
