@@ -19,6 +19,20 @@ figcaption
     text-align: center;
 }
 
+.centerFigure
+{
+    width:70%; 
+    margin-left:15%; 
+    margin-right:15%;
+}
+
+.centerTable
+{
+    width:70%;
+    margin-left:15%; 
+    margin-right:15%;
+}
+
 header, footer 
 {
     margin-top: 40px;
