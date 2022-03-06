@@ -1,0 +1,117 @@
+html {
+    width: 100%;
+    height: 100%;
+    background-image: url("images/Candle-Background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  header, h2 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+    
+  footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 70px;
+   
+  }
+
+  body {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .validator
+  {
+      text-decoration: none;
+  }
+  
+  h1 {
+    font-size: 60px;
+    padding-top: 20px;
+  
+  }
+  
+  td, th {
+    border: 1px solid black;  
+    padding: 8px;
+    background-color:#262626;
+    color:powderblue;
+    text-align: left;    
+  }
+  
+  th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    background-color:#262626;   
+    color: rgb(255, 198, 107);
+  }
+  
+  table.center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  form {
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+    color:black;
+  }
+  
+  abbr {
+    text-decoration: none;
+  
+  }
+  
+  .whitespace {
+    padding: 10px;
+  }
+  
+  .whitespace2 {
+    padding: 60px;
+  }
+  
+  .close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .tableimg
+  {
+    width: 100px;
+    height: 75px;
+  }
+  
+  #formlabel
+  {
+    padding-bottom: 25px;
+  }
+  
+  #formdiv
+  {
+    background-color: rgb(255, 198, 107);
+    display: inline-block;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 25px;
+    border-radius: 12px;
+    border-style: solid;
+    text-align: center;
+  }
+  
+  #submit
+  {
+    background-color: #262626;
+    color: rgb(255, 198, 107);
+  }
+  
+
+  

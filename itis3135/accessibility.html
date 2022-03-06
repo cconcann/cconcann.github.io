@@ -1,0 +1,114 @@
+<html lang = "en">
+
+<head>
+  <meta charset = "utf-8">
+  <meta name = "viewport" content = "width = device-width, initial-scale = 1, shrink-to-fit = no">
+  <meta name = "Description" content = "Testing accessibility.">
+
+  <link rel = "stylesheet" href = "concannon_accessibility.css">
+  <title>Test For Accessibility</title>
+
+</head>
+
+<body>
+  <header>
+    <h1>
+      Candle Delights
+    </h1>
+  </header>
+  <main>
+
+    <a href = "../index.html">Go back to ITIS-3135 homepage</a>
+    <br>
+    <br>
+
+    <table class = "center">
+
+      <caption>Candles</caption>
+
+      <thead>
+        <tr>
+          <th scope = "col">TYPE</th>
+          <th scope = "col">PRODUCT</th>
+          <th scope = "col">FEATURES</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <th scope = "row">Birthday Candles</th>
+          <td><img class = "tableimg" src = "images/Birthday-Candles.jpg" alt = "Birthday Candles"></td>
+          <td>
+            1. Comes in a range of fun, vibrant colors<br>
+            2. Small and slender forms allow you to add as many or as few of them to a dessert as you desire<br>
+            3. Offers a way to personalize customers' desserts on birthdays and anniversaries
+          </td>   
+        </tr>
+        <tr>
+            <th scope = "row">Votives</th>
+            <td><img class = "tableimg" src = "images/voltives.jpeg" alt = "Voltives"></td>
+            <td>
+              1. Inexpensive and easy to use<br>
+              2. Bigger than tea lights to provide longer burn times, making them better for longer events
+            </td>
+          </tr>
+          <tr>
+              <th scope = "row">Taper Candles</th>
+              <td><img class = "tableimg" src = "images/taper-candles.jpg" alt = "Taper Candles"></td>
+              <td>
+                1. Commonly known as window candles<br>
+                2. Long, slender constructions add dimension to table tops
+              </td>
+            </tr>
+      </tbody>
+    </table>
+    
+    <div id = "formdiv">
+      <h3 id = "formlabel">
+        Enter your name and phone number to win a gift!
+      </h3>
+      <form action = "#">
+        <label for = "name">Name: </label>
+        <input name = "name" id = "name" type = "text" required>
+        
+        <label for = "number">Phone number: </label>
+        <input name = "number" id = "number" type = "tel" required>
+        <br>
+        <input name = "submit" id = "submit" type = "submit">
+      </form>
+    </div>
+   
+    <div class = "whitespace"></div>
+    <a href = "https://teachaccess.github.io/tutorial/#/12">Click here to find more about accessibility</a>
+    <div class = "whitespace"></div>
+
+    <a href = "https://dequeuniversity.com/rules/axe/3.2/color-contrast"> Find out if your font
+      color and background color passes WCAG standard!</a>
+  </main>
+        <footer>
+            <br/>
+            <nav>
+                <a href="https://webpages.charlotte.edu/cconcann/" target="_blank">Charlotte.edu</a> |
+                <a href="https://github.com/cconcann/cconcann.github.io" target="_blank">Github</a> |
+                <a href="https://cconcann.github.io/" target="_blank">Github.io</a> |
+                <a href="https://github.com/cconcann/cconcann.github.io" target="_blank">ITIS 3135 Github Pages</a> |
+                <a href="https://www.codecademy.com/profiles/net5854060157" target="_blank">Codecademy</a> |
+                <a href="https://www.freecodecamp.org/fcc24c91f20-61ae-4acf-803c-2209febb926b" target="_blank">freeCodeCamp</a> |
+                <a href="http://jsfiddle.net/user/cconcann/fiddles/" target="_blank">JSFiddle</a> |
+                <a href="https://www.linkedin.com/in/christopher-concannon-1b840122b/" target="_blank">LinkedIn</a>
+            </nav>
+
+            <br />
+            Created by <a href = "../concannonconsultingllc/" target = "_blank">Concannon Consulting LLC</a> &copy;2022.
+            <br />
+	        
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+	            <img src = "images/button_validation_css.png" />
+            </a>    
+            <a href="https://validator.w3.org/check?uri=referer">
+                <img src = "images/button_validation_html5.png" />
+            </a>
+        </footer>
+    </body>
+
+</html>
