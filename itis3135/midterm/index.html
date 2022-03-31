@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Chris Concannon ITCS 3135 Midterm</title>
+
+        <style>
+            body {
+                background: rgb(40, 90, 184);
+                color: black;
+                font-family: sans-serif;
+                margin-right: 150px;
+                margin-left: 150px;
+                
+            }
+
+            header {
+                margin-top: 40px;
+                text-align: center;
+            
+            }
+
+            h1, h2, footer {
+                text-align: center;
+            }
+
+            .old, .new, .unpainted, .painted, .riding, .me .gear .wrecked{
+                width: 300px;
+                height: 300px;
+            }
+
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+        
+            button {
+                background-color: #d32ebd;
+                border: none;
+                color: black;
+                padding: 10px 30px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 5px 3px;
+                cursor: pointer;
+            }
+          </style>
+
+        <script>
+            let pages = ['index', 'aboutme', 'secondbike', 'painting', 'riding', 'dangers'];
+
+            function changepage(page) {
+                for (let i = 0; i < pages.length; i++) {
+                    if (page === pages[i]) {
+                        document.getElementById(pages[i]).style.display = 'initial';
+                    }
+                    else {
+                        document.getElementById(pages[i]).style.display = 'none';
+                    }
+                }
+            }
+        </script> 
+    </head>
+
+    <body>
+
+        <header>
+
+            <h1>Chris Concannon | ITIS 3135 | Midterm</h1>
+            <h2>Motorcycles</h2>
+            <nav>                
+                <button onclick="changepage('index')">Home</button>
+                <button onclick="changepage('aboutme')">About Me</button>
+                <button onclick="changepage('secondbike')">Second Bike</button>
+                <button onclick="changepage('painting')">Painting Bikes</button>
+                <button onclick="changepage('riding')">Riding</button>
+                <button onclick="changepage('dangers')">The Dangers of Riding</button>
+            </nav>
+            <b/r>
+        </header>
+
+        <main>
+        
+            <section id="index">
+
+                <h2>Home</h2>                
+
+                <h3>
+
+                    <div class="GIF">
+                        <img src="images/me.jpeg" alt="Picture Me" class="me">
+                    </div>
+
+                    Hello and welcome to  this amazing page about a great, relatively new hobby for me. Please click the page tabs
+                    to see different images about my hobby. If you havent guessed it yet, this page is dedicated to my love of
+                    motorcycles.
+
+                </h3>
+                
+
+            </section>           
+            
+            <section id="aboutme" style="display: none">
+                
+                <h2>About Me</h2>        
+                
+                <h3>
+
+                    <div class="GIF">
+                        <img src="images/oldbike.jpeg" alt="old bike" class="old">
+                    </div> 
+                    <br/>
+                    
+                    <p>
+                    I purchased my first motorcycle as soon as I could legally ride at 16. My father and mother had both acquired
+                    their own bikes at this point. My dad had always wanted one, but my mom had forbidden it until I reached
+                    a certain age. At this point in our lives, she finally relented.
+                    </p>
+
+                    <br/>
+                    <p>
+                    My first bike was a simple Honda Shadow Aero 750. It was a good reliable bike. It did not have any wild
+                    or cool features, just two wheels and reliability. Most importantly, 16 year old me working full time
+                    was able to afford this bike.
+                    </p>
+                </h3>
+
+            </section>
+
+            <section id="secondbike" style="display: none">
+                
+                <h2>Second Bike</h2>                
+                
+                <h3>
+
+                    <div class="GIF">
+                        <img src="images/newbike.jpeg" alt='new bike' class="new">
+                    </div> 
+                    <br/>
+                    
+                    <p>
+                    The army made riding nonexistant at a certain point in my life, so I sold my first bike. However
+                    I had always intended on purchasing another bike one day. Finally, the time had come, and I made the 
+                    decision to get another bike. So with my sudden influx of deployment cash, I went out and bought my second
+                    bike.
+                    </p>
+
+                    <br/>
+                    
+                    <p>
+                    This second bike was worlds differently from my first bike. The first bike was a generally small bike,
+                    there wasnt much to it. This second bike was much larger, and had many bells and whistles that the 
+                    previous did not have. It has the front fairing, bigger engine, cruise control, hard saddlebags, it had almost
+                    everything a kid could want. I still currently own this bike and will ride it till the wheels fall off.
+                    </p>
+
+                </h3>
+            
+            
+            </section>
+
+            <section id="painting" style="display: none">
+                <h2>Painting bikes</h2>                
+                
+                <h3>
+
+                    <div class="GIF">
+                        <img src="images/unpainted.jpeg" class="unpainted bike" alt="unpainted">
+                        <img src="images/painted.jpeg" class="painted bike" alt="painted">
+                    </div>
+                    <br/>
+
+                    <p>
+                      The above images are my dads bike. For his birthday, a friend of ours and myself decided to paint his bike.
+                      The process was long and gruiling, my first introduction to body work on anything.  It required much attention
+                      to detail, and more hours then i care to think about. However, i loved doing it to the point i considered doing
+                      it as a side hustle.
+                    </p>
+                
+                </h3>                
+
+            </section>
+
+            <section id="riding" style="display: none">
+                <h2>Riding</h2>                
+
+                <h3>
+
+                    <div class="GIF">
+                        <img src="images/riding.jpeg" class="riding" alt="riding">
+                    </div>
+                    <br/>
+
+                    <p>
+                      Riding is amazing. There is no way to describe the feeling one gets from riding a bike on the open road.
+                      It is so freeing, noone can bother you, theres no texting, no calling, just the act of riding. Its so relaxing,
+                      I do not possess the vocabulary to adequetley describe the feeling of riding.
+                    </p>
+                </h3>
+                
+            </section>
+
+            <section id="dangers" style="display: none">
+                <h2>The Dangers of Riding</h2>                
+                
+                <h3>
+
+                    <div class="GIF">
+                        <img src="images/wrecked.jpeg" class="wrecked" alt="wrecked">
+                        <img src="images/gear.jpeg" class="gear" alt="gear">
+                    </div> <br>
+
+                    <p>
+                      I have no misgivings to the dangers of riding. Being on two wheels with no additional protection is absolutely
+                      dangerous. One of the above images is my moms bike from when she wrecked her bike last year. I was actually
+                      deployed whenever i received the message from my dad letting me know what had happened. Therefor, i cannot stress
+                      enough to everyone, please be careful, and know you are accepting a large amount of risk. The other image above
+                      is showing you the minimum amount of gear you should wear to protect yourself while riding.
+                    </p>
+
+                </h3>
+            
+            </section>
+
+        </main>       
+        <footer>
+            <br/>
+            <nav>
+                <a href="https://webpages.charlotte.edu/cconcann/" target="_blank">Charlotte.edu</a> |
+                <a href="https://github.com/cconcann/cconcann.github.io" target="_blank">Github</a> |
+                <a href="https://cconcann.github.io/" target="_blank">Github.io</a> |
+                <a href="https://github.com/cconcann/cconcann.github.io" target="_blank">ITIS 3135 Github Pages</a> |
+                <a href="https://www.codecademy.com/profiles/net5854060157" target="_blank">Codecademy</a> |
+                <a href="https://www.freecodecamp.org/fcc24c91f20-61ae-4acf-803c-2209febb926b" target="_blank">freeCodeCamp</a> |
+                <a href="http://jsfiddle.net/user/cconcann/fiddles/" target="_blank">JSFiddle</a> |
+                <a href="https://www.linkedin.com/in/christopher-concannon-1b840122b/" target="_blank">LinkedIn</a>
+            </nav>
+
+            <br />
+            Created by <a href = "../concannonconsultingllc/" target = "_blank">Concannon Consulting LLC</a> &copy;2022.
+            <br />
+	        
+            <a href="https://jigsaw.w3.org/css-validator/check/referer">
+	            <img src = "images/button_validation_css.png" />
+            </a>    
+            <a href="https://validator.w3.org/check?uri=referer">
+                <img src = "images/button_validation_html5.png" />
+            </a>
+        </footer>
+    </body>
+
+</html>
