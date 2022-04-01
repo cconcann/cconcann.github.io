@@ -11,23 +11,23 @@
                 color: black;
                 font-family: sans-serif;
                 margin-right: 150px;
-                margin-left: 150px;
-                
+                margin-left: 150px;                
             }
 
             header {
                 margin-top: 40px;
-                text-align: center;
-            
+                text-align: center;            
             }
 
             h1, h2, footer {
                 text-align: center;
             }
 
-            .old, .new, .unpainted, .painted, .riding, .me .gear .wrecked{
+            .picture{
                 width: 300px;
-                height: 300px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
             }
 
             ul {
@@ -55,10 +55,12 @@
 
             function changepage(page) {
                 for (let i = 0; i < pages.length; i++) {
-                    if (page === pages[i]) {
+                    if (page === pages[i]) 
+                    {
                         document.getElementById(pages[i]).style.display = 'initial';
                     }
-                    else {
+                    else 
+                    {
                         document.getElementById(pages[i]).style.display = 'none';
                     }
                 }
@@ -91,7 +93,7 @@
 
                 <h3>
 
-                    <div class="GIF">
+                    <div class="picture">
                         <img src="images/me.jpeg" alt="Picture Me" class="me">
                     </div>
 
@@ -110,7 +112,7 @@
                 
                 <h3>
 
-                    <div class="GIF">
+                    <div class="picture">
                         <img src="images/oldbike.jpeg" alt="old bike" class="old">
                     </div> 
                     <br/>
@@ -137,7 +139,7 @@
                 
                 <h3>
 
-                    <div class="GIF">
+                    <div class="picture">
                         <img src="images/newbike.jpeg" alt='new bike' class="new">
                     </div> 
                     <br/>
@@ -168,7 +170,7 @@
                 
                 <h3>
 
-                    <div class="GIF">
+                    <div class="picture">
                         <img src="images/unpainted.jpeg" class="unpainted bike" alt="unpainted">
                         <img src="images/painted.jpeg" class="painted bike" alt="painted">
                     </div>
@@ -190,7 +192,7 @@
 
                 <h3>
 
-                    <div class="GIF">
+                    <div class="picture">
                         <img src="images/riding.jpeg" class="riding" alt="riding">
                     </div>
                     <br/>
@@ -209,7 +211,7 @@
                 
                 <h3>
 
-                    <div class="GIF">
+                    <div class="picture">
                         <img src="images/wrecked.jpeg" class="wrecked" alt="wrecked">
                         <img src="images/gear.jpeg" class="gear" alt="gear">
                     </div> <br>
