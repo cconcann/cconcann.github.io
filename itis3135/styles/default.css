@@ -166,24 +166,23 @@ th, td
     box-sizing: border-box;
   }
   
-  /* Position the image container (needed to position the left and right arrows) */
-  .container {
+  .container 
+  {
     position: relative;
   }
   
-  /* Hide the images by default */
-  .mySlides {
+  .mySlides 
+  {
     display: none;
   }
   
-  /* Add a pointer when hovering over the thumbnail images */
-  .cursor {
+  .cursor 
+  {
     cursor: pointer;
   }
   
-  /* Next & previous buttons */
-  .prev,
-  .next {
+  .prev, .next 
+  {
     cursor: pointer;
     position: absolute;
     top: 40%;
@@ -198,20 +197,19 @@ th, td
     -webkit-user-select: none;
   }
   
-  /* Position the "next button" to the right */
-  .next {
+  .next 
+  {
     right: 0;
     border-radius: 3px 0 0 3px;
   }
   
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
+  .prev:hover, .next:hover 
+  {
     background-color: rgba(0, 0, 0, 0.8);
   }
   
-  /* Number text (1/3 etc) */
-  .numbertext {
+  .numbertext 
+  {
     color: #f2f2f2;
     font-size: 12px;
     padding: 8px 12px;
@@ -219,32 +217,33 @@ th, td
     top: 0;
   }
   
-  /* Container for image text */
-  .caption-container {
+  .caption-container 
+  {
     text-align: center;
     background-color: #222;
     padding: 2px 16px;
     color: white;
   }
   
-  .row:after {
+  .row:after 
+  {
     content: "";
     display: table;
     clear: both;
   }
   
-  /* Six columns side by side */
-  .column {
+  .column 
+  {
     float: left;
-    width: 16.66%;
+    width: 16%;
   }
   
-  /* Add a transparency effect for thumnbail images */
-  .demo {
+  .demo 
+  {
     opacity: 0.6;
   }
   
-  .active,
-  .demo:hover {
+  .active, .demo:hover 
+  {
     opacity: 1;
   }
