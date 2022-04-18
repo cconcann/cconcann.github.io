@@ -80,3 +80,6 @@ th, td
 	color: black;
 	font-size: x-large;
 }
+#navlist li {
+    display: inline-block;
+  }
