@@ -1,22 +1,82 @@
-body {
-font-family: Arial, Helvetica, sans-serif;
-margin: 0 auto;
-padding: 20px;
-width: 550px;
-border: 3px solid blue;
+body 
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ED254E;
+    background-color: #9DF7E5;
+
+    margin-left: 150px;
+    margin-right: 150px;
 }
-h1, h2, ul, p {
-margin: 0;
-padding: 0;
+
+.centerImage 
+{
+    text-align: center;
+    display: block;
 }
-h1 {
-padding-bottom: .25em;
+
+figcaption 
+{
+    text-align: center;
 }
-h2 {
-font-size: 120%;
-padding: .5em 0 .25em;
+
+.centerFigure
+{
+    width:70%; 
+    margin-left:15%; 
+    margin-right:15%;
 }
-li {
-padding-right: 10px;
-display: inline;
+
+.centerTable
+{
+    width:70%;
+    margin-left:15%; 
+    margin-right:15%;
+}
+
+header, footer 
+{
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #ED254E;
+    background-color: #9DF7E5;
+}
+
+h1, h2, h3 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 0px;
+}
+
+main 
+{
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+a {text-decoration: none; }
+a:hover {color: rgb(31, 104, 163);}
+
+thead , tfoot
+{
+	background-color: rgb(199, 199, 60);
+}
+
+tbody tr:nth-child(odd)
+{
+    background-color: #4244d8;
+}
+
+th, td
+{
+    border: 1px solid rgb(255, 4, 4);
+}
+
+.bold
+{
+    font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+	font-size: x-large;
 }
