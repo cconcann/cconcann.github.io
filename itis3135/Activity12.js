@@ -9,7 +9,8 @@ $(document).ready(function() {
         speed: 4000,
         pagerType: 'short',
         captions: true,
-        pagerSelector: '#id_paper'
+        pagerSelector: '#id_paper',
+        randomStart: true
 
     });
 });
