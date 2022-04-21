@@ -1,0 +1,39 @@
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+  }
+
+  body 
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    background-color: #FAFF5E;
+
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+div
+{
+    background-color: #8CFFF0;
+}
+
+header, footer 
+{
+    margin-top: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: black;
+    background-color: #FAFF5E;
+}
+
+main 
+{
+    margin-left: 120px;
+    margin-right: 120px;
+}
