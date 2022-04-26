@@ -11,11 +11,15 @@
     background-color: #8CFFF0;
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 150px;
+    text-decoration: none;
   }
 
   .navbarbutton
   {
     border-bottom: 2px solid black;
+    height: 30px;
+    text-decoration: none;
   }
 
   body 
@@ -32,6 +36,8 @@ div
 {
     background-color: #8CFFF0;
     border-radius: 25px;
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 8px 26px 0 rgba(0, 0, 0, 0.19);
+
 }
 
 header, footer 
