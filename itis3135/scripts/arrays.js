@@ -65,7 +65,7 @@ function addSalary()
     else 
     {
         person.push(entrySalary);
-        salary.push(document.getElementById("employee").value);
+        salary.push(document.getElementById("salary").value);
 
         /* switch (entrySalary) 
         {
