@@ -8,6 +8,12 @@
     overflow: auto; /* Enable scrolling if the sidenav has too much content */
     justify-content: left;
     left: 5px;
+    border: 2px solid black;
+  }
+
+  .navbarbutton
+  {
+    border-bottom: 2px solid black;
   }
 
   body 
