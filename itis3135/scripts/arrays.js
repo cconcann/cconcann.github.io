@@ -52,6 +52,11 @@ function displaySalary()
 function addSalary() 
 {    
     var entrySalary = document.getElementById("employee").value;
+
+    if(document.getElementById("salary").value < 0 || "")
+    {
+        alert("input salary is not valid, please input a positive integer");
+    }
     
     if (person.includes(entrySalary) == true) 
     {
@@ -60,8 +65,9 @@ function addSalary()
     else 
     {
         person.push(entrySalary);
+        salary.push(document.getElementById("employee").value);
 
-        switch (entrySalary) 
+        /* switch (entrySalary) 
         {
             case "Steven Steve":
                 salary.push(60000);
@@ -83,6 +89,7 @@ function addSalary()
                 salary.push(75000);
                 break;
         }
+        */
     }
     document.getElementById("employee").focus();
 }
