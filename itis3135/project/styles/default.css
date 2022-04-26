@@ -74,3 +74,12 @@ main
 }
 
 a {text-decoration: none; }
+
+.bx-wrapper {
+	margin-bottom: 20px;
+}
+#id_pager {
+	text-align: center;
+	font-size: 90%;
+	color: green;
+}
