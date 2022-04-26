@@ -53,7 +53,9 @@ function addSalary()
 {    
     var entrySalary = document.getElementById("employee").value;
 
-    if(document.getElementById("salary").value < 0 || "")
+    let salaryvar = document.getElementById("salary").value;
+
+    if(salaryvar <= 0 || salaryvar == "")
     {
         alert("input salary is not valid, please input a positive integer");
     }
