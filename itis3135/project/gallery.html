@@ -6,18 +6,21 @@
             MG Photography Gallery
         </title>
         <link type = "text/css" href = "styles/default.css" rel = "stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+        <script src="Activity12.js"></script>
     </head>
     <body>
         <header>        
             <h1>🌻MG Photography🌻</h1>
             <ul class="navbar">
-                <li><a href="index.html">Home</a></li>
+                <li class="navbarbutton"><a href="index.html">Home</a></li>
                 
-                <li><a href="aboutus.html">About Us</a></li>
+                <li class="navbarbutton"><a href="aboutus.html">About Us</a></li>
                 
-                <li><a href="gallery.html">Photo Gallery</a></li>
+                <li class="navbarbutton"><a href="gallery.html">Photo Gallery</a></li>
                 
-                <li><a href="pricing.html">Pricing and Deals</a></li>
+                <li class="navbarbutton"><a href="pricing.html">Pricing and Deals</a></li>
                 
                 <li><a href = "contact.html">Contact Us</a></li>  
             </ul>
@@ -28,13 +31,22 @@
                 Gallery!
             </h2>
 
-            <figure>
-                <img src="images/dog.jpg" alt="dog">
-                <figcaption><em>A great picture showcasing the elegance of this dog.</em></figcaption>
-            </figure>
             <p>
-                slideshow
+                Please enjoy some examples of projects that MG Photography has been a part of. Below is a slideshow showcasing just
+                a small amount of the work they have accomplished. If you would like to see more of our work, please visit us 
+                <a href = "https://www.instagram.com/m.p.gilbert/" target = "_blank">here</a>.
             </p>
+
+            <ul id="slider">
+                <li><img src="images/babyfeet.jpeg" alt="" title="Baby Photo"></li>
+                <li><img src="images/blacklight.jpeg" alt="" title="Blacklight Photo"></li>
+                <li><img src="images/bike1.jpeg" alt="" title="Picture on a Bike"></li>
+                <li><img src="images/chrispaddle.jpeg" alt="" title="Paddle Boarding"></li>
+                <li><img src="images/mwall.jpeg" alt="" title="Standard Wall Photo"></li>
+                <li><img src="images/bike2.jpeg" alt="" title="Picture of Model on Bike"></li>
+            </ul>
+            <p id="id_pager"></p>
+            
 
             </div>
         </main>         
