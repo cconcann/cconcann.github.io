@@ -6,10 +6,18 @@
             MG Photography Contact Page
         </title>
         <link type = "text/css" href = "styles/default.css" rel = "stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Dekko' rel='stylesheet'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+        <script src="scripts/default.js"></script>
+        <script src="scripts/shake.js"></script>
+        <script src="scripts/widget.js"></script>
+
     </head>
     <body>
         <header>        
-            <h1>🌻MG Photography🌻</h1>
+            <h1 class="companytitle">🌻MG Photography🌻</h1>
             <ul class="navbar">
                 <li class="navbarbutton"><a href="index.html">Home</a></li>
                 
@@ -24,19 +32,70 @@
         </header>
         <main>
             <div>
-            <h2>
+            <h2 class="centertext">
                 Contact Us!
             </h2>
 
-            <figure>
-                <img src="images/dog.jpg" alt="dog">
-                <figcaption><em>A great picture showcasing the elegance of this dog.</em></figcaption>
-            </figure>
-            <p>
-                Insert contact data and forms here.
-            </p>
+            
+                <form action = "”#”" class="formpadding" id="shake">
+                    <label for = "first" class = "bold">First Name:</label>
+                    <input type = "text" name = "first" id = "first" required = ""> <br>
+        
+                    <label for = "last" class = "bold">Last Name:</label>
+                    <input type = "text" name = "last" id = "last" required = ""><br>
+                    
+                    <label for = "telephone" class = "bold">Phone number:
+        
+                        <input type = "tel" required = "" placeholder = "(###) ###-####" id = "telephone" size = "10">
+                    </label> <br>
+                    
+                    <label for = "email" class = "bold">Email:
+                        <input type = "email" name = "email" id = "email" required = "" placeholder = "Enter a valid email address">
+                    </label>         
+                    <br>
+                    <p>Please select your preferred method of contact:</p>
+                      <label for = "radioemail">Email</label>
+                      <input type = "radio" id = "radioemail" name = "contact" value = "Email">
+                      <input type = "radio" id = "radiophone" name = "contact" value = "Phone">                  
+                      <label for = "radiophone">Phone</label>
+                      <br>
+                     
+        
+                    <fieldset>
+                        <legend class = "bold">I would like to schedule a:</legend>
+        
+                        <input type = "checkbox" name = "website" value = "consulation" id = "consulation" required = "">
+                        <label for = "consulation">consulation</label>
+        
+                        <input type = "checkbox" name = "twohourstudio" value = "twohourstudio" id = "twohourstudio" required = "">
+                        <label for = "twohourstudio">Two Hour Studio Session</label>
+        
+                        <input type = "checkbox" name = "alldaystudio" value = "alldaystudio" id = "alldaystudio" required = "">
+                        <label for = "alldaystudio">All Day Studio Session</label>
 
+                        <input type = "checkbox" name = "twohoursite" value = "twohoursite" id = "twohoursite" required = "">
+                        <label for = "twohoursite">Two Hour Site Session</label>
+        
+                        <input type = "checkbox" name = "alldaysite" value = "alldaysite" id = "alldaysite" required = "">
+                        <label for = "alldaysite">All Day Site Session</label>
+        
+                        <input type = "checkbox" name = "other" value = "Other" id = "other" required = "">
+                        <label for = "other">Other</label>
+                    </fieldset> <br>
+        
+                    <p><label for="textbox">Please put any additional comments or concerns here:</label></p>
+                    <textarea id="otherbox" name="otherbox" rows="4" cols="50">We at MG Photography pride ourselves in customer service, we will get back to you at your desired contact method as quickly as possible. Thank you for considering us for your needs!</textarea>
+                    <br>
+
+                    <input type="submit" value="A submit button">
+    
+                    <button type = "reset" value = "Reset" class = "buttonformat" id="reset" onclick="$('#shake').shake()">Reset</button>
+
+    
+        
+                </form>
             </div>
+
         </main>         
         <footer>
             <br/>

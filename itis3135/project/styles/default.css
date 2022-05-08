@@ -2,7 +2,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 150px;
+    width: 200px;
     position: fixed; /* Make it stick, even on scroll */
     overflow: auto; /* Enable scrolling if the sidenav has too much content */
     justify-content: left;
@@ -11,14 +11,20 @@
     background-color: #8CFFF0;
     border-radius: 25px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    height: 150px;
+    height: 200px;
     text-decoration: none;
+    font-size: 20;
+    font-family: 'Actor';
+  }
+
+  h2{
+    font-family: 'Dekko';
   }
 
   .navbarbutton
   {
     border-bottom: 2px solid black;
-    height: 30px;
+    height: 39px;
     text-decoration: none;
   }
 
@@ -73,13 +79,54 @@ main
     text-align: center;
 }
 
-a {text-decoration: none; }
+a {
+    text-decoration: none;
+    color: black;
+ }
 
 .bx-wrapper {
 	margin-bottom: 20px;
+    max-width: 800px;
+text-align: center;
+margin-left: auto;
+margin-right: auto;
 }
 #id_pager {
 	text-align: center;
 	font-size: 90%;
 	color: green;
+}
+
+.centerslide
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutusparagraph {
+    justify-content: left;
+}
+
+.parentdiv {
+    display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 10px;
+        row-gap: 10px;
+}
+
+.childdiv {
+    height: 200px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid yellow;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.formpadding {padding: 15px;}
+
+.companytitle {
+    font-family: 'Actor';
+    font-size: 35px;
 }

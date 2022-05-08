@@ -4,13 +4,14 @@ $(document).ready(function() {
         minSlides: 1,
         maxSlides: 1,
         slideWidth: 800,
-        slideMargin: 20,
+        slideMargin: 60,
         pager: true,
-        speed: 8000,
+        speed: 750,
         pagerType: 'short',
         captions: true,
         pagerSelector: '#id_paper',
-        randomStart: true
-
+        randomStart: true,
+        adaptiveHeight: true,
+        pause: 5000
     });
 });
